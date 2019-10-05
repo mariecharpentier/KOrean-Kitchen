@@ -1,0 +1,23 @@
+
+<section class="form-section">
+
+  <h2 class="title">Sign in !</h2>
+
+  <?php if (array_key_exists('user', $_SESSION) == false) {?>
+
+    <form id="login-form" class="sign container-s" action="login.php" method="POST">
+
+      <input type="email" name="Email" placeholder="Your email" value="" class="sign-item" required/>
+      <input type="password" name="Password" placeholder="Your password" value="" class="sign-item" required/>
+      <input type="submit" name="Valider" value="Sign In" class="sign-item-submit sign-item"/>
+
+    </form>
+
+  <?php } else {?>
+
+    <section class="logout-section container-s">
+        <p>You have already signed in. If you wanna log out, click <a href="logout.php" class="logout-item a-style">here</a>!</p>
+    </section>
+
+  <?php } ?>
+</section>

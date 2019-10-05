@@ -1,0 +1,361 @@
+/* CSS des pages Recipes et OneRecipe */
+/***************************************************************************/
+
+/*** FAMILY RECIPES ***/
+
+.family-recipes .title {
+  margin-bottom: 0;
+}
+
+.family-recipes img{
+  float: left;
+  overflow: hidden;
+  padding-right: 50px;
+  width: 460px;
+  margin-top: -40px;
+}
+
+.recipes {
+  clear:both;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px 20px;
+  background-color: #f1f1f1;
+}
+
+.recipes-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.recipes-item-title a {
+  font-size: 40px;
+  color: #ff6f61;
+}
+
+.recipes img {
+  width: 220px;
+  border-radius: 50%;
+}
+
+
+/***************************************************************************/
+
+/*** ONE RECIPE ***/
+
+.recipe-part1 {
+  text-align: center;
+}
+
+.recipe-part1 img {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ingredients,
+.sauces {
+  border: 2px solid #ff6f61;
+  border-radius: 5px;
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+  min-width: 200px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.ingredients h3,
+.sauces h3,
+.preparation h3 {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  color: #ff6f61;
+  margin: 0 0;
+}
+
+.preparation p {
+  line-height: 1.8;
+}
+
+.recipe-part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1.8;
+  padding: 50px;
+}
+
+.recipe-part2 span {
+  color: #ff6f61;
+  font-size: 40px;
+}
+
+.recipes-item-title a {
+  font-size: 36px;
+  color: #ff6f61;
+}
+
+.comment-list {
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.comment-list li {
+  padding: 10px;
+}
+
+.comment-list i {
+  color: #ff6f61;
+  padding-right: 20px;
+}
+
+.comment-list span {
+  font-size: 14px;
+}
+
+.comments-section {
+  margin-top: 10vh;
+}
+
+.comments-section i,
+.comments-section a {
+  color: #ff6f61;
+}
+
+.comments-section .sign-item-submit {
+  width: 45%;
+}
+
+.back {
+  background-color: #ff6f61;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  position: absolute;
+  top: 400px;
+  right: 300px;
+}
+
+.back a {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 18px;
+  color: #f1f1f1;
+  display: block;
+  padding-top: 18%
+}
+
+.back span {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  color: #f1f1f1;
+}
+
+/***************************************************************************/
+/* MEDIA QUERIES FAMILY RECIPES */
+@media screen and (max-width: 1680px) {
+    .back {
+      right: 217px;
+    }
+
+    .comments-section .sign-item-submit {
+      width: 35%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .back {
+      top: 380px;
+      right: 160px;
+    }
+}
+
+@media screen and (max-width: 1258px) {
+  .container.recipes-page {
+      width: 82%;
+  }
+
+  .back {
+    top: 330px;
+    right: 130px;
+  }
+
+  .ingredients {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container.recipes-page {
+      width: 90%;
+  }
+
+  .back {
+    top: 320px;
+    right: 30px;
+  }
+
+  .recipe-part1.container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .family-recipes img {
+    padding-right: 0;
+    width: 392px;
+  }
+
+  .back {
+    top: 260px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  .container.recipes-page {
+      width: 95%;
+  }
+
+  .back {
+    right: 60px;
+  }
+
+  .recipe-part1 img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  .back {
+    top: 160px;
+    right: 85px;
+  }
+
+  .family-recipes img {
+    float: none;
+    margin: 0 16%;
+    width: 70%;
+  }
+
+  .family-recipes article {
+    padding-top: 0;
+  }
+
+  .recipes-item-title a {
+    font-size: 32px;
+  }
+
+  .recipes img {
+    width: 175px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+    .back {
+      width: 90px;
+      height: 90px;
+      top: 155px;
+      right: 36px;
+    }
+
+    .back span {
+      font-size: 30px;
+    }
+
+    .recipe-part2 {
+      flex-direction: column;
+    }
+
+    .ingredients {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    .preparation.container-s,
+    .comment-list.container-s,
+    .comments-section {
+      width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .back {
+    top: 110px;
+  }
+
+  .recipes-item-title a {
+    font-size: 22px;
+  }
+
+  .recipes img {
+    width: 150px;
+    padding-top: 10px;
+  }
+
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .recipes-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 430px) {
+    .back {
+      width: 60px;
+      height: 60px;
+      top: 114px;
+      right: 36px;
+    }
+
+    .back span {
+      font-size: 18px;
+    }
+
+    .back a {
+      font-size: 10px;
+    }
+
+    .comment-list {
+      padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .back {
+      top: 85px;
+      right: 40px;
+    }
+
+    .preparation.container-s,
+    .comments-section.container-s {
+      width: 96%;
+    }
+}
+
+
+
+/***************************************************************************/

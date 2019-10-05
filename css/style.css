@@ -1,0 +1,383 @@
+/* CSS des pages Index, About, Flowers, Pastries */
+/***************************************************************************/
+
+/*** INDEX ***/
+.welcome {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.title {
+  font-size: 40px;
+  color: #ff6f61;
+  text-align: center;
+}
+
+.hr-main {
+  border: 1px solid #ff6f61;
+}
+
+.welcome p {
+  color: #444241;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-section h3 {
+  color: #ff6f61;
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+}
+
+.video {
+  background-color:#f1f1f1;
+  border-radius: 20px;
+  padding: 20px;
+  width: 44%;
+  text-align: center;
+}
+
+.video-article {
+  width: 100%;
+}
+
+.video img{
+  width: 480px;
+}
+
+.blog-item p {
+  margin-top: 20px;
+}
+
+.besties {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.besties img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.bck-img {
+  width: 206px;
+  height: 206px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/***************************************************************************/
+/*** ABOUT ME ***/
+
+#circle {
+  width: 280px;
+  height: auto;
+  margin-top: -140px;
+  z-index: 99;
+}
+
+.about-item i {
+  color: #ff6f61;
+}
+
+.about-img:nth-of-type(1) {
+  width: 80%;
+}
+
+.about-img:nth-of-type(2) {
+  width: 80%;
+  transform: rotate(20deg);
+}
+
+.about-img:nth-of-type(3) {
+  width: 80%;
+  transform: rotate(-10deg);
+}
+
+.about-img:nth-of-type(4) {
+  width: 80%;
+  transform: rotate(10deg);
+}
+/***************************************************************************/
+/*** FLOWERS & PASTRIES***/
+
+.gallery {
+  margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+.grid-item {
+    justify-self: center;
+}
+
+.gallery img {
+  width: 220px;
+  height: 220px;
+}
+
+/***************************************************************************/
+/* MEDIA QUERIES Global */
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .title {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+/***************************************************************************/
+/* MEDIA QUERIES ABOUT */
+
+@media screen and (min-width: 1358px) {
+    #circle {
+      width: 320px;
+      margin-top: -230px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #circle {
+      width: 260px;
+      margin-top: -120px;
+    }
+}
+
+@media screen and (max-width: 894px) {
+    #circle {
+      width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #circle {
+      width: 190px;
+      margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    #circle {
+      width: 140px;
+      margin-top: -55px;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    #circle {
+      width: 126px;
+      margin-top: -38px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+  .about-img:nth-of-type(1) {
+    width: 300px;
+  }
+
+  .about-img:nth-of-type(2) {
+    width: 320px;
+    transform: rotate(20deg);
+  }
+
+  .about-img:nth-of-type(3) {
+    width: 410px;
+    transform: rotate(-10deg);
+  }
+
+  .about-img:nth-of-type(4) {
+    width: 260px;
+    transform: rotate(10deg);
+  }
+
+}
+
+/***************************************************************************/
+/* MEDIA QUERIES FLOWERS & PASTRIES */
+@media screen and (max-width: 1218px) {
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .galleries.container-m {
+      width: 75%;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  .galleries.container-m {
+      width: 60%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid-item:last-of-type {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .galleries.container-m {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .galleries.container-m {
+      width: 85%;
+  }
+
+  .grid-container {
+    grid-gap: 0;
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .galleries.container-m {
+      width: 85%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+/***************************************************************************/
+/* MEDIA QUERIES INDEX */
+
+@media screen and (max-width: 1120px) {
+  .blog-section.container-s {
+    width: 80%;
+  }
+
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .video {
+    width: 90%;
+  }
+
+  .video:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 983px) {
+  .besties img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .besties.container {
+    width: 73%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .video img {
+    width: 270px;
+  }
+
+  .home.container-m {
+    width: 90%;
+  }
+
+  .video-section.container-l {
+    width: 98%;
+  }
+
+  .video {
+    padding: 20px 0;
+  }
+
+  iframe {
+    width: 380px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 340px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video img {
+    width: 210px;
+  }
+
+  .video {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .video {
+    width: 98%;
+  }
+}

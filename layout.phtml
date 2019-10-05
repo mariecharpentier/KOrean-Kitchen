@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Jessica's KOrean Kitchen</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Nanum+Pen+Script|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- Feuilles de style de l'application -->
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/forms.css" rel="stylesheet">
+  <link href="css/recipes.css" rel="stylesheet">
+  <script src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+  <!-- En-tête commune de l'application -->
+  <header>
+    <nav>
+      <ul class="nav-main">
+        <li><a href="about.php">About me</a></li>
+        <li><a href="recipes.php">Family Recipes</a></li>
+        <li><a href="flowers.php">Flowers</a></li>
+        <li><a href="pastries.php">Yummi Pastries</a></li>
+      </ul>
+      <ul class="nav-social">
+          <li><a href="login.php"><i class="far fa-user"></i></a></li>
+          <li><a href="register.php"><i class="fas fa-user-plus"></i></a></li>
+          <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </nav>
+
+    <a href="index.php">
+      <section class="header-main">
+          <img src="img/header-meal.svg" alt="meal illustration" class="header-meal kTimeCode">
+      </section>
+    </a>
+
+  </header>
+
+  <main>
+
+    <!-- Chargement du template PHTML spécifié par le programme PHP -->
+    <?php include $template.'.phtml' ?>
+
+  </main>
+
+  <!-- Pied de page commun de l'application -->
+  <footer class="footer-main">
+    <section class="social">
+      <ul>
+        <li><a href="https://www.facebook.com/hyeonjl" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://blog.naver.com/lasprass" target="_blank"><i class="fab fa-blogger"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCO1igeNndMWrpPJgYSnC29g" target="_blank"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </section>
+    <nav class="nav-footer">
+      <ul>
+        <li><a href="about.php">About me</a></li>
+        <li><a href="recipes.php">Family Recipes</a></li>
+        <li><a href="flowers.php">Flowers</a></li>
+        <li><a href="pastries.php">Yummi Pastries</a></li>
+      </ul>
+    </nav>
+    <section class="user">
+      <ul>
+        <li><a href="login.php"><i class="far fa-user"></i></a><a href="register.php"><i class="fas fa-user-plus"></i></a><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </section>
+    <a href="mail.php" class="mailing"><i class="far fa-paper-plane"></i> Contact me !</a>
+  </footer>
+  <script src="https://kit.fontawesome.com/77cab20a3b.js"></script>
+
+</body>
+</html>

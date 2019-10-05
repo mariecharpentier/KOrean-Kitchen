@@ -1,0 +1,32 @@
+<section class="container recipes-page">
+
+  <section class="family-recipes">
+    <img src="img/familyportrait.png" alt="">
+    <article class="welcome">
+      <h2 class="title">Family Recipes...</h2>
+      <p>Here's my family !</p>
+      <p>We love to share meals, and since I was a child I have been helping my mother in the kitchen, and I've learned a lot about cooking...</p>
+      <p>You can find here some of our delicious Family Recipes. A few are from my mother, others from all these experiences that I have made. I wish you to enjoy those with your beloved ones.</p>
+      <p>From traditional Korean recipes, to Western pastries, let's explore flavoured experiences !</p>
+    </article>
+    <hr class="hr-main">
+
+  </section>
+
+
+<?php foreach ($recipes as $recipe) { ?>
+
+    <section class="recipes">
+      <a href="oneRecipe.php?id=<?= $recipe['Recipe_Id'] ?>"><img src="img/<?= $recipe['Images'] ?>" alt="meal"></a>
+
+      <article class="recipes-item">
+        <h3 class="recipes-item-title"><a href="oneRecipe.php?id=<?= $recipe['Recipe_Id'] ?>"><?= $recipe['Title'] ?></a></h3>
+        <p><a href="oneRecipe.php?id=<?= $recipe['Recipe_Id'] ?>"><?= $recipe['Description'] ?></a></p>
+      </article>
+    </section>
+
+<?php } ?>
+
+
+
+</section>

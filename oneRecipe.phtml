@@ -1,0 +1,61 @@
+<section class="oneRecipe-section">
+
+<?php foreach ($recipeDetails as $recipeDetail) { ?>
+
+  <h3 class="title"><?= $recipeDetail['Title'] ?></h3>
+  <div class="back">
+    <a href="recipes.php"><span>Back!</span><br>to the list...</a>
+  </div>
+  <section class="recipe-part1 container">
+    <img src="img/<?= $recipeDetail['Cooking_Img'] ?>" alt="meal">
+  </section>
+
+  <section class="recipe-part2 container-s">
+    <section class="ingredients">
+      <h3>Ingredients</h3>
+      <p><?= $recipeDetail['Ingredients'] ?></p>
+    </section>
+
+    <section class="sauces">
+      <h3>Sauces</h3>
+      <p><?= $recipeDetail['Sauces'] ?></p>
+    </section>
+  </section>
+
+  <section class="preparation container-s">
+    <h3>Preparation</h3>
+    <p><?= $recipeDetail['Instructions'] ?></p>
+  </section>
+
+<?php } ?>
+
+<ul class="comment-list container-s">
+  <?php foreach ($comments as $index => $comment) {  ?>
+  <li>
+    <i class="fa fa-comment"></i>" <?= htmlspecialchars($comment['Content']) ?> "<span> written by <?= htmlspecialchars($comment['Name']) ?></span>
+  </li>
+  <?php } ?>
+</ul>
+
+<?php if (array_key_exists('user', $_SESSION) == true) {?>
+
+  <form class="comments-section sign container-s" action="add_comment.php?id=<?= $_GET['id'] ?>" method="POST">
+    <h3 class="title">Leave a comment</h3>
+    <input type="hidden" name="recipeId" value="<?= $_GET['id'] ?>">
+    <label for="name"></label>
+    <input type="text" id="name" name="name" class="sign-item" placeholder="Your name"...>
+    <label class="textarea" for="content"></label>
+    <textarea id="content" name="content" rows="5" class="sign-item" placeholder="Your comments here..."></textarea>
+    <input type="submit" name="Valider" value="Send" class="sign-item-submit sign-item"/>
+  </form>
+
+<?php } else { ?>
+
+  <section class="comments-section container">
+    <p><i class="fas fa-star-of-life"></i> You wanna leave a comment ? Please, <a href="login.php">sign in !</a></p>
+  </section>
+
+<?php } ?>
+
+
+</section>

@@ -1,0 +1,60 @@
+/* CSS des pages Mail, Login, Logup, OneRecipe (comments) */
+/***************************************************************************/
+
+/*** FORM & CONTACT***/
+
+.sign-item {
+  padding: 20px 0 20px 30px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  border: none;
+  display: block;
+  text-align: left;
+  width: 90%;
+  resize: none;
+}
+
+.sign-item-submit {
+  background-color: #ff6f619e;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 0;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.logout-item {
+  color: #ff6f61;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.success-section {
+  text-align: center;
+  height: 40vh;
+}
+
+.thanks {
+  font-family: 'Nanum Pen Script', cursive;
+  color: #ff6f61;
+  font-size: 40px;
+}
+/***************************************************************************/
+/***************************************************************************/
+/* FORMS MEDIA QUERIES*/
+@media screen and (max-width: 576px) {
+
+  .form-section form {
+    width: 80%;
+  }
+
+  .sign-item-submit {
+    font-size: 18px;
+    width: 45%;
+  }
+
+}
