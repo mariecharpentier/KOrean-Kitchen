@@ -4,7 +4,7 @@
 
 class User extends Database {
 
-  public function saveUser($firstname, $lastname, $email, $hashPassword)
+  public function saveUser($firstname, $lastname, $email, $password)
   {
 
     $hashPassword = $this->hashPassword($password);
@@ -15,7 +15,7 @@ class User extends Database {
     VALUES
     (?, ?, ?, ?)';
 
-    $execute = [$firstname, $lastname, $email, $hashPassword];
+    $execute = [$firstname, $lastname, $email, $password];
 
     $this->executeInSql($sql, $execute);
 
@@ -35,7 +35,7 @@ class User extends Database {
       );
 
 
-    if ($this->verifyPassword($_POST['password'], $user['Password']) && $user != false ) {
+    if ($this->verifyPassword($_POST['password'], $user['Password']) == true && $user != false ) {
 
       $_SESSION['user']['FirstName'] = $user['FirstName'];
       $_SESSION['user']['LastName'] = $user['LastName'];
