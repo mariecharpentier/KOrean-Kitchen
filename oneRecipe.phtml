@@ -2,7 +2,7 @@
 
 <?php foreach ($recipeDetails as $recipeDetail) { ?>
 
-  <h3 class="title"><?= $recipeDetail['Title'] ?></h3>
+  <h3><span class="title"><?= $recipeDetail['Title'] ?></span><i class="far fa-heart favorite" title="Add to my favourites" data-id="<?= $recipeDetail['Recipe_Id'] ?>"></i></h3>
   <div class="back">
     <a href="recipes.php"><span>Back!</span><br>to the list...</a>
   </div>
