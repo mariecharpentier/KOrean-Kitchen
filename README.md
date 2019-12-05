@@ -9,6 +9,7 @@ Vous pouvez voir le projet en ligne à cette adresse :
 http://jessicas-ko-kitchen.com/index.php
 
 <h2>Languages utilisés</h2>
+Entièrement réalisé from scratch, il utilise les languages suivants :
 <ul>
   <li>HTML</li>
   <li>CSS</li>
