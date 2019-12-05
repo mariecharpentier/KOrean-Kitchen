@@ -38,16 +38,27 @@ $(document).ready(function(){
 
 // Affiche les recettes favorites
 function showFavoriteById() {
-    for ( let i = 0; i < localStorage.length; i++){
-        let id = localStorage.key(i);
-        let favorite = localStorage.getItem(id);
-        
+
+    if (localStorage.length === 0) {
         $('.favorite-section').append(`
-        <li class="favorite-article" data-id="${id}">
-            <a class="favorite-description" data-id="${id}"><p>- ${favorite}</h3></a>
-            <i class="fas fa-trash-alt delete" title="Supprimer" data-id="${id}"></i>
-        </li>`);
+        <p class="favorite-article">You haven't any favorites recipes yet!</p>`);
+        console.log('b')
+    } else {
+
+        for ( let i = 0; i < localStorage.length; i++){
+            let id = localStorage.key(i);
+            let favorite = localStorage.getItem(id);
+            
+                $('.favorite-section').append(`
+                <li class="favorite-article" data-id="${id}">
+                    <a class="favorite-description" data-id="${id}"><p>- ${favorite}</h3></a>
+                    <i class="fas fa-trash-alt delete" title="Supprimer" data-id="${id}"></i>
+                </li>`);
+               console.log('a')
+            
+        }
     }
+    
 }
 
 // Supprime les favoris 
@@ -63,7 +74,8 @@ function deleteFavorite() {
 // Dirige vers la page de la recette selon son id
 function goToFavoriteRecipe(){
 
-    $('.favorite-article').click(function(){
+    $('.favorite-article').click(function(e){
+        e.preventDefault();
         const id = $(this).data("id");
         $(location).attr('href','oneRecipe.php?id='+ id);   
     })
