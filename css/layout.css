@@ -138,8 +138,11 @@ nav ul {
   padding: 10px;
 }
 
+.nav-social i.fa-heart {
+  color: #ff6f61;
+}
+
 .header-main {
-  /* background: url(../img/header-small0.svg); */
   background: url(../img/header1.png);
   background-repeat: no-repeat;
   background-position: center;
