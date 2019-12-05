@@ -21,6 +21,5 @@ Il est responsive, mais encore en cours d'amélioration :)
 
 <h2>Screenshots</h2>
 
-<img src="img/home-mockup.jpg">
-<img src="img/recipe-mockup.jpg">
-<img src="img/form-mockup.jpg">
+<img src="home-mockup.jpg">
+<img src="recipe-mockup.jpg">
