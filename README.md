@@ -5,6 +5,8 @@
 Ce projet a été réalisé pour valider la formation à la 3W Academy suivie durant l'hiver 2018. 
 C'est l'aboutissement de 3 mois de code intensif, et mes tout premiers pas en tant qu'artisane du code.
 
+C'est donc un projet d'école avant tout, et une première étape de réflexion pour la conception du vrai site de Jessica... A suivre donc. 
+
 Vous pouvez voir le projet en ligne à cette adresse : 
 http://jessicas-ko-kitchen.com/index.php
 
